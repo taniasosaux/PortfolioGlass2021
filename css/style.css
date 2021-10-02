@@ -51,6 +51,10 @@ body {
 
 }
 
+body.hide-scrolling {
+    overflow-y: hidden;
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -98,14 +102,16 @@ section {
     backdrop-filter: var(--backdrop-filter-blur);
 }
 .main {
-
 max-width: 1200px;
 margin: auto;
-
+transition: all 0.5s ease-in-out;
 }
 
+.main.fade-out {
+ opacity: 0;
+    }
+
 .container{
-   
     padding: 0 40px;
     width: 100%;
 }
@@ -464,6 +470,11 @@ font-weight: 400;
     height: 100%;
     width: 100%;
     z-index: 200;
+    visibility: hidden;
+}
+
+.portfolio-popup.open{
+    visibility: visible;
     overflow-y: auto;
 }
 
@@ -483,8 +494,16 @@ font-weight: 400;
     width: 100%;
     border: 1px solid var(--white-alpha-40);
     backdrop-filter: var(--backdrop-filter-blur);
-
+    opacity: 0;
+    transform: scale(0.9);
 }
+
+.portfolio-popup.open .pp-content{
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
 
 .pp-header{
     position: relative;
@@ -520,7 +539,6 @@ font-weight: 400;
  
 .pp-body .general-info li{
    
-
     margin-bottom: 10px;
     font-weight: 500;
     text-transform: capitalize;
