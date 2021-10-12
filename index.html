@@ -13,8 +13,30 @@
   <!-- Main Start-->
   <div class="main">
 
+    <!-- Header Start-->
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">home</a></li>
+                <li><a href="#about" class="nav-item link-item">acerca de mi</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">portafolio</a></li>
+                <li><a href="#contact" class="nav-item link-item">contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Header End-->
+
     <!-- Home Section Start-->
-    <section class="home-section align-items-center hidden">
+    <section class="home-section align-items-center active" id="home">
       <div class="container">
         <div class="row align-items-center">
           <div class="home-text">
@@ -22,8 +44,8 @@
             <h1>Tania Sosa</h1>
             <h2>Product Designer</h2>
             <h3>Front End Developer Jr.</h3>
-            <a href="#" class="btn"> Acerca de mi </a>
-            <a href="#" class="btn"> Proyectos </a>
+            <a href="#about" class="btn link-item"> Acerca de mi </a>
+            <a href="#portfolio" class="btn link-item"> Proyectos </a>
           </div>
           <div class="home-img">
             <div class="img-box">
@@ -37,7 +59,7 @@
     <!-- Home Section End-->
 
     <!-- About Section Start-->
-    <section class="about-section sec-padding hidden">
+    <section class="about-section sec-padding" id="about ">
       <div class="rection">
         <div class="row">
           <div class="section-title">
@@ -151,8 +173,8 @@
 
             <!-- Experience End -->
 
-            <a href="#" class="btn">descargar CV</a>
-            <a href="#" class="btn">Contáctame</a>
+            <a href="cv.pdf" target="_blank" class="btn">descargar CV</a>
+            <a href="#contact" class="btn link-item">Contáctame</a>
           </div>
         </div>
       </div>
@@ -161,8 +183,7 @@
     <!-- About Section End-->
 
     <!-- Portfolio Section Start-->
-
-    <section class="portfolio-section sec-padding">
+    <section class="portfolio-section sec-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -266,7 +287,9 @@
             <div class="portfolio-item-details">
               <div class="description">
                 <p>
-                  Como proyecto final de el curso materialize impartido por Platzi decidí colaborar con mi comunidad más mujeres en UX México creando nuestra página web, aplicando Arquitectura de información, wireframes, código, maquetación y despliegue en sitio web
+                  Como proyecto final de el curso materialize impartido por Platzi decidí colaborar con mi comunidad más
+                  mujeres en UX México creando nuestra página web, aplicando Arquitectura de información, wireframes,
+                  código, maquetación y despliegue en sitio web
                 </p>
               </div>
               <div class="general-info">
@@ -286,20 +309,25 @@
             <div class="portfolio-item-thumbnail">
               <img src="img/portfolio/5.jpg" alt="portfolio item thumb">
             </div>
-            <h3 class="portfolio-item-title">Nombre de mi quinto proyecto aqui</h3>
+            <h3 class="portfolio-item-title">Adutos Mayores App</h3>
             <button type="button" class="btn view-project-btn">Ver proyecto</button>
             <div class="portfolio-item-details">
               <div class="description">
                 <p>
-                  Para este reto me fue requerido conceptualizar desde cero una aplicación web básica para apoyar a un sector de la población a cumplir sus metas financieras. Elegí el sector de adultos mayores y creé el prototipo interactivo para la aplicación llamada AMAPP (Adultos Mayores APP)
+                  Para este reto me fue requerido conceptualizar desde cero una aplicación web básica para apoyar a un
+                  sector de la población a cumplir sus metas financieras. Elegí el sector de adultos mayores y creé el
+                  prototipo interactivo para la aplicación llamada AMAPP (Adultos Mayores APP)
                 </p>
               </div>
               <div class="general-info">
                 <ul>
                   <li>Creado - <span>Julio 2021</span></li>
-                  <li>Tecnologías - <span>Desk Research, Marketing Digital, User Research, Creacion de User Persona Entrevista a Profundidad, Prueba de usabilidad, Elaboración de Mockups, Wireframes, Prototipo Interactivo, Creacion de UI Kit</span></li>
+                  <li>Tecnologías - <span>Desk Research, Marketing Digital, User Research, Creacion de User Persona
+                      Entrevista a Profundidad, Prueba de usabilidad, Elaboración de Mockups, Wireframes, Prototipo
+                      Interactivo, Creacion de UI Kit</span></li>
                   <li>Rol - <span>Product Designer</span></li>
-                  <li>Interactúa con el prototipo - <span><a href="#" target="_blank">https://marvelapp.com/prototype/8832h60</a>
+                  <li>Interactúa con el prototipo - <span><a href="#"
+                        target="_blank">https://marvelapp.com/prototype/8832h60</a>
               </div></span></li>
               </ul>
             </div>
@@ -311,13 +339,15 @@
             <div class="portfolio-item-thumbnail">
               <img src="img/portfolio/6.jpg" alt="portfolio item thumb">
             </div>
-            <h3 class="portfolio-item-title">Nombre de mi sexto proyecto aqui</h3>
+            <h3 class="portfolio-item-title">Video Visita Flat</h3>
             <button type="button" class="btn view-project-btn">Ver proyecto</button>
             <div class="portfolio-item-details">
               <div class="description">
                 <p>
-                  El Challenge consistía en Diseñar un Servicio de visitas no presenciales ya que debido a la pandemia las personas dudan mucho para acudir a visitar las casas y departamentos que tienen a la venta y ésto afecta a la compañía al perder clientes potenciales
-¿Quieres conocer mi propuesta?.
+                  El Challenge consistía en Diseñar un Servicio de visitas no presenciales ya que debido a la pandemia
+                  las personas dudan mucho para acudir a visitar las casas y departamentos que tienen a la venta y ésto
+                  afecta a la compañía al perder clientes potenciales
+                  ¿Quieres conocer mi propuesta?.
                 </p>
               </div>
               <div class="general-info">
@@ -325,54 +355,97 @@
                   <li>Creado - <span>Agosto 2021</span></li>
                   <li>Tecnologías - <span> </span></li>
                   <li>Rol - <span>Service Designer</span></li>
-                  <li>Da click aquí- <span><a href="#" target="_blank">https://www.figma.com/proto/IwkHzDCnC9F5kUCAaI9TYp/TaniaSosa-Flat?page-id=0%3A1&node-id=2%3A623&viewport=241%2C48%2C0.39&scaling=min-zoom&starting-point-node-id=2%3A623</a></span></li>
-              </ul>
+                  <li>Da click aquí- <span><a href="#"
+                        target="_blank">https://www.figma.com/proto/IwkHzDCnC9F5kUCAaI9TYp/TaniaSosa-Flat?page-id=0%3A1&node-id=2%3A623&viewport=241%2C48%2C0.39&scaling=min-zoom&starting-point-node-id=2%3A623</a></span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+          <!-- Portfolio Item End-->
         </div>
-        <!-- Portfolio Item End-->
-      </div>
 
     </section>
 
     <!-- Portfolio Section End-->
 
+    <!-- Contact Section Start-->
+    <section class="contact-section sec-padding" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Contáctame</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form>
+              <div class="row">
+                <div class="input-group">
+                  <input type="text" placeholder="Name" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Email" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Subject" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <textarea placeholder="Message" class="input-control" required></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="btn">Enviar Mensaje</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Email</h3>
+              <p>ejemplo@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Teléfono</h3>
+              <p>55 38 ** ** **</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>
+                ¡Sígueme!</h3>
+              <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-internet-explorer"></i></a>
+                <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
-  </div>
+  </section>
+
+  <!-- Contact Section End-->
+
+ 
   <!-- Main End-->
   <!-- Portfolio Item Details Popup Start-->
   <div class="portfolio-popup">
-  <div class="pp-inner">
-  <div class="pp-content">
-    <div class="pp-header">
-      <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
-      <div class="pp-thumbnail">
-        <img src="img/portfolio/5.jpg" alt="pp-thumbnail">
-      </div>
-      <h3>Mi app</h3>
-    </div>
-      <div class="pp-body">
-          <div class="description">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod culpa nostrum, excepturi
-              officiis
-              reiciendis, quidem deleniti repellendus quam sed explicabo doloremque omnis ad illo incidunt. Quas
-              blanditiis nobis molestias.
-            </p>
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+          <div class="pp-thumbnail">
+            <img src="img/portfolio/5.jpg" alt="pp-thumbnail">
           </div>
-          <div class="general-info">
-            <ul>
-              <li>Creado - <span>fecha</span></li>
-              <li>Tecnologías - <span>Tecnologias usadas</span></li>
-              <li>Rol - <span>¿Que hice?</span></li>
-              <li>Ver - <span><a href="#" target="_blank">www.taniasosa.com</a></span></li>
-          </ul>
+          <h3>Mi app</h3>
         </div>
+        <div class="pp-body">
+        </div>
+
       </div>
-    
-    </div>
-   
-  
+
+
     </div>
   </div>
 
@@ -383,3 +456,25 @@
 </body>
 
 </html>
+
+
+<!-- DESCRIPTION  
+
+<div class="description">
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quod culpa nostrum, excepturi
+    officiis
+    reiciendis, quidem deleniti repellendus quam sed explicabo doloremque omnis ad illo incidunt. Quas
+    blanditiis nobis molestias.
+  </p>
+</div>
+<div class="general-info">
+  <ul>
+    <li>Creado - <span>fecha</span></li>
+    <li>Tecnologías - <span>Tecnologias usadas</span></li>
+    <li>Rol - <span>¿Que hice?</span></li>
+    <li>Ver - <span><a href="#" target="_blank">www.taniasosa.com</a></span></li>
+</ul>
+</div>
+
+-->
