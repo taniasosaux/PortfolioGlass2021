@@ -1,4 +1,13 @@
 
+window.addEventListener("load", ()=>{
+    document.querySelector(".main").classList.remove("hidden");
+    document.querySelector(".home-section").classList.add("active");
+    /* ---- Page Loader ---- */
+    document.querySelector(".page-loader").classList.add("fade-out");
+    setTimeout(()=> {
+        document.querySelector(".page-loader").style.display = "none";
+    },600);
+});
 
 /* ---- Toggle Navbar ---- */
 const navToggler = document.querySelector(".nav-toggler");
@@ -21,7 +30,7 @@ if(e.target.classList.contains("link-item") && e.target.hash !== ""){
     //Activate the overlay to prevent multiple clicks
     document.querySelector(".overlay").classList.add("active");
     navToggler.classList.add("hide");
-  if(e.target.classList.contains("nav.item")){
+  if(e.target.classList.contains("nav-item")){
     toggleNavbar();
 }
 else{
