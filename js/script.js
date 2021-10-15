@@ -18,6 +18,8 @@ function toggleNavbar(){
 
 document.addEventListener("click", (e) =>{
 if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+    //Activate the overlay to prevent multiple clicks
+    document.querySelector(".overlay").classList.add("active");
     navToggler.classList.add("hide");
   if(e.target.classList.contains("nav.item")){
     toggleNavbar();
@@ -32,6 +34,7 @@ setTimeout(() =>{
     window.scrollTo(0,0);
     document.body.classList.remove("hide-scrolling");
     navToggler.classList.remove("hide");
+    document.querySelector(".overlay").classList.remove("active");
   },500);
     }
 });
