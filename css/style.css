@@ -38,10 +38,10 @@ outline: none;
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to bottom right, var(--pink-light), var(--cyan-light));
+    background-image: linear-gradient(to right top, #F9B8E7, #FFB6D3, #FFBBB5, #FFC993, #FFDF78, #F9F871);
     background-attachment: fixed;
     font-size: 16px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-weight: 300;
     color: var(--blue-dark);
     line-height: 1.5;
@@ -201,6 +201,7 @@ button{
      vertical-align: middle;
      transition: color 0.3s ease;
  }
+ 
 .btn::before{
     content: '';
     position: absolute;
@@ -314,7 +315,7 @@ button{
     opacity: 0.6;
 }
 
-.bg-circles .circle-5{
+.bg-circles .circle-4{
     height: 50px;
     width: 50px;
     background-color: orange;
@@ -788,7 +789,7 @@ font-weight: 400;
  .portfolio-item-thumbnail{
      padding: 10px;
      background-color: var(--white-alpha-25);
-     border:1px solid var (--white-alpha-40);
+     border:1px solid var(--white-alpha-40);
      border-radius: 10px;
     }
 
@@ -801,6 +802,7 @@ font-weight: 400;
    font-size: 20px;
    text-transform: capitalize;
    margin: 20px 0;
+   text-align: left;
 }
 
     .portfolio-item-details{
@@ -968,7 +970,7 @@ background-color: var(--white-alpha-25);
 border:1px solid var(--white-alpha-40);
 color: var(--main-color);
 border-radius: 50px;
-margin: 6px 40px 0 0 ;
+margin: 0 0 0 0 ;
 transition: all 0.3s ease;
 
        }   
