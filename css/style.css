@@ -41,8 +41,8 @@ body {
     background-image: linear-gradient(to right top, #F9B8E7, #FFB6D3, #FFBBB5, #FFC993, #FFDF78, #F9F871);
     background-attachment: fixed;
     font-size: 16px;
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
     color: var(--blue-dark);
     line-height: 1.5;
     overflow-x: hidden;
@@ -1048,3 +1048,4 @@ width: 100%;
     font-size: 20px;
 }
 }
+
