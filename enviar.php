@@ -21,5 +21,5 @@ $asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu cor
 
 mail($para, $asunto, utf8_decode($message), $header);
 
-header("Location:#index.html");
+header("Location:index.html");
 ?>
