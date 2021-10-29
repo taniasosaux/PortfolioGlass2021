@@ -38,8 +38,16 @@ outline: none;
 
 body {
     min-height: 100vh;
-    background-image: linear-gradient(to right top, #F9B8E7, #FFB6D3, #FFBBB5, #FFC993, #FFDF78, #F9F871);
-    background-attachment: fixed;
+    background: linear-gradient(45deg, #ffdf78, #ffbbb5, #f9b8e7);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    -o-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+    /*background-image: url("../img/background.png");
+background-size: cover;*/
+    background-attachment:fixed;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
@@ -48,7 +56,28 @@ body {
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
     padding: 35px 15px;
+}
 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 79%}
+    50%{background-position:100% 22%}
+    100%{background-position:0% 79%}
+}
 }
 
 body.hide-scrolling {
@@ -102,6 +131,7 @@ section {
     backdrop-filter: var(--backdrop-filter-blur);
     display: none;
 }
+
 
 section.active{
     display: block;
@@ -986,60 +1016,8 @@ transition: all 0.3s ease;
            background-color: var(--main-color);
        }
 
-/* Contact Section original */
 
-/* Start Contact Section TEST */
-
-.templatemo_contacttitle {
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #ffffff;
-    text-align: center;
-}
-
-.templatemo_sub_contacttitle {
-    width: 100%;
-    font-size: 22px;
-    color: #91bf24;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.templatemo_contact {
-    margin: 30px;
-    width: 100%;
-    margin-left: 15%;
-}
-
-.templatemo_contactform input, textarea {
-    width: 100%;
-    background: #282828;
-    border: 1px solid #393939;
-    padding: 7px 10px;
-    margin: 0px 0px 10px 0px;
-    background-color: #FAFAFA;
-}
-
-.templatemo_contactform textarea {
-    height: 100px;
-}
-
-
-.templatemo_contactform .btn-primary {
-    background: #92bf24;
-    border: none;
-    border-radius: 0px;
-    color: #3d5602;
-    font-weight: 800;
-}
-
-.templatemo_contactform .btn-primary:hover {
-    background: #a6d82c;
-}
-
-/* End Contact Section TEST */
+/* Contact Section */
 
 @media(max-width:991px){
     .container{
@@ -1106,4 +1084,6 @@ width: 100%;
     font-size: 20px;
 }
 }
+
+
 
